@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import "./styles/index.css";
-import Landing from "./components/Landing";
+import "../styles/index.css";
+import Landing from "../components/Landing";
 
 export default function Home({ data }) {
   const { allMarkdownRemark } = data;

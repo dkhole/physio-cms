@@ -14,6 +14,14 @@ module.exports = {
         path: `${__dirname}/md`,
       },
     },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /imgs/
+        }
+      }
+    },
     `gatsby-transformer-remark`,
   ]
 }

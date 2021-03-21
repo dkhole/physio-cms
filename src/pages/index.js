@@ -1,5 +1,7 @@
-import React from "react"
+import React from "react";
 import { graphql } from "gatsby";
+import "./styles/index.css";
+import Landing from "./components/Landing";
 
 export default function Home({ data }) {
   const { allMarkdownRemark } = data;
@@ -8,10 +10,8 @@ export default function Home({ data }) {
   console.log(mdFiles);
 
   return (
-    <div className="blog-post-container">
-      {
-        mdFiles[0].node.frontmatter.title
-      }
+    <div id="wrapper">
+      <Landing mainTitle={mdFiles[0].node.frontmatter.title}/>
     </div>
   );
 }

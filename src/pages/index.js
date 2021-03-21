@@ -3,25 +3,29 @@ import { graphql } from "gatsby";
 
 export default function Home({ data }) {
 // data.markdownRemark holds your data
-  const { markdownRemark } = data;
-  const { frontmatter } = markdownRemark;
+//  const { allMarkdownRemark } = data;
+//  const mdFiles = allMarkdownRemark.edges;
 
+  //console.log(mdFiles);
   return (
     <div className="blog-post-container">
-      {
-        frontmatter.slug
-      }
+      hello
     </div>
   );
 }
 
-export const pageQuery = graphql`
+/**export const pageQuery = graphql`
   query MyQuery {
-    markdownRemark {
-      frontmatter {
-        title
-        slug
+    allMarkdownRemark {
+      edges{
+        node {
+          frontmatter {
+            date
+            slug
+            title
+          }
+        }
       }
     }
   }
-`
+`**/

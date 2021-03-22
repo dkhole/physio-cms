@@ -1,5 +1,71 @@
 #wrap {
-    height: 50px;
+    height: auto;
     width: 100vw;
-    background-color: rgb(173, 85, 85);
+    margin-top: 20px;
+}
+
+#title {
+    height: 40px;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Prompt Bold';
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+#address {
+    height: 40px;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Prompt Regular';
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+#map-wrap {
+    width: 100vw;
+}
+
+#map-container {
+    width: 375px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+}
+
+#map {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    border: 2px solid #00c0B5;
+    position: absolute;
+    left: 25px;
+}
+
+#here {
+    position: absolute;
+    left: 250px;
+    top: -30px;
+    font-family: 'Caveat';
+    font-size: 25px;
+}
+
+#arrow {
+    height: 50px;
+    width: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 10px;
+    left: 270px;
+}
+
+#content {
+    text-align: center;
+    font-family: 'OpenSans Regular';
+    width: 300px;
+    margin: auto;
+    line-height: 181%;
+    letter-spacing: 0.75px;
+    font-size: 14px;
 }

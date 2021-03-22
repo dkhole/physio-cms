@@ -8,11 +8,13 @@ export default function Location() {
             <div id={styles.title}><span>Location</span></div>
             <div id={styles.address}><span>42 Wallaby Way, Sydney</span></div>
             <div id={styles.mapWrap}>
-                <div id={styles.map}></div>
-                <div id={styles.here}>We are here</div>
-                <Arrow />
-                <div id={styles.content}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum dui eget egestas lacinia. In viverra, erat eu euismod consectetur, purus quam consectetur elit, in. </div>
+                <div id={styles.mapContainer}>
+                    <div id={styles.map}></div>
+                    <div id={styles.here}>We are here</div>
+                    <Arrow id={styles.arrow}/>
+                </div>
             </div>
+            <div id={styles.content}><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum dui eget egestas lacinia. In viverra, erat eu euismod consectetur, purus quam consectetur elit, in.</span></div>
         </div>
       );
 }

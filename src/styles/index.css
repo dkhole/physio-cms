@@ -28,15 +28,20 @@
     src: url(../assets/fonts/OpenSans-Bold.ttf);
 }
 
+@font-face {
+    font-family: "Caveat";
+    src: url(../assets/fonts/Caveat-VariableFont_wght.ttf);
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
 }
 
 #wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
 }

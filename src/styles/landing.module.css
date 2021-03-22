@@ -1,12 +1,13 @@
 #wrap {
     width: 100vw;
     color: white;
+    padding: 85px 0 50px 0;
 }
 
 #photo {
     height: 500px;
     width: min(375px, 100vw - 15%);
-    margin: 5px auto;
+    margin: 0 auto;
     border-radius: 0 45px 0 45px;
 }
 
@@ -36,6 +37,7 @@
     border: none;
     border-radius: 0 15px 0 15px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #main-title {

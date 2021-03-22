@@ -1,11 +1,18 @@
 #wrap {
     width: 100vw;
+    color: white;
 }
 
 #photo {
     height: 500px;
-    width: 375px;
-    background-color: rgb(219, 179, 179);
+    width: min(375px, 100vw - 15%);
+    margin: 5px auto;
+    border-radius: 0 45px 0 45px;
+}
+
+.pic-wrap {
+    height: 500px;
+    width: min(375px, 100vw - 15%);
     margin: 5px auto;
     border-radius: 0 45px 0 45px;
 }

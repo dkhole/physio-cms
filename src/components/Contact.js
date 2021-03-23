@@ -2,6 +2,7 @@ import React from "react";
 import * as styles from "../styles/contact.module.css";
 import Facebook from "../assets/svg/facebook.svg";
 import Instagram from "../assets/svg/instagram.svg";
+import Arrow from "../assets/svg/right.svg";
 
 export default function Contact() {
     return (
@@ -16,6 +17,8 @@ export default function Contact() {
                     <Facebook />
                     <Instagram />
                 </div>
+                <Arrow id={styles.arrow}/>
+                <span id={styles.follow}>Follow Us!</span>
             </div>
         </div>
       );

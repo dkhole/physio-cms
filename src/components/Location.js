@@ -5,7 +5,7 @@ import Arrow from "../assets/svg/right.svg";
 export default function Location() {
     return (
         <div id={styles.wrap}>
-            <div id={styles.title}><span>Location</span></div>
+            <div id={styles.title}><span>LOCATION</span></div>
             <div id={styles.address}><span>42 Wallaby Way, Sydney</span></div>
             <div id={styles.mapWrap}>
                 <div id={styles.mapContainer}>

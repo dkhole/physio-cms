@@ -1,43 +1,43 @@
 #wrap {
-    height: 500px;
-    width: min(330px, calc(100vw - 125px));
+    height: auto;
+    width: min(calc(100vw - 110px), 310px);
     background-color: #f9f9f9;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 0 15px 0 15px;
     margin: 50px auto;
 }
 
 .prof-img {
-    height: 250px;
-    width: min(330px, calc(100vw - 125px));
-    border-radius: 0 15px 0 0;
+    height: 180px;
+    width: min(calc(100vw - 110px), 310px);
+    border-radius: 0 12px 0 0;
     margin: 0;
     padding: 0;
 }
 
 .text-wrap {
-    width: 275px;
-    height: 200px;
-    margin: auto;
-    margin-top: 25px;
-    padding: 0;
+    width: min(calc(100vw - 110px), 310px);
+    height: auto;
 }
 
 .name {
     font-family: 'Prompt Bold';
     font-size: 24px;
     letter-spacing: 1px;
+    padding-top: 35px;
+    padding-left: 35px;
 }
 
 .title {
     font-family: 'Prompt Regular';
-    color: #006660
+    letter-spacing: 0.5px;
+    color: #006660;
+    padding-left: 35px;
 }
 
 .description {
-    margin-top: 30px;
     font-family: 'OpenSans Regular';
     line-height: 20px;
-    font-size: 13px;
-
+    font-size: clamp(10px, 1.25vw, 13px);
+    padding: 25px 27.5px 35px 35px;
 }

@@ -9,10 +9,12 @@ export default function Contact() {
         <div id={styles.wrap}>
             <div id={styles.title}>CONTACT US</div>
             <div id={styles.contact}>
-                <span>42 Wallaby Way<br/></span>
-                <span>Sydney, NSW<br/></span>
-                <span>P: (02) 9230 3192<br/></span>
-                <span>E: movement@gmail.com</span>
+                <span>
+                    42 Wallaby Way<br/>
+                    Sydney, NSW<br/>
+                    P: (02) 9230 3192<br/>
+                    E: movement@gmail.com
+                </span>
                 <div id={styles.socials}>
                     <Facebook className={styles.socialSvg} />
                     <Instagram className={styles.socialSvg} />

@@ -38,6 +38,6 @@
 .description {
     font-family: 'OpenSans Regular';
     line-height: 20px;
-    font-size: clamp(10px, 1.25vw, 13px);
+    font-size: clamp(11.5px, 1.25vw, 13px);
     padding: 25px 27.5px 35px 35px;
 }

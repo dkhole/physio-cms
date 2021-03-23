@@ -9,7 +9,7 @@ export default function Gallery() {
         <div id={styles.wrap}>
             <div id={styles.title}>GALLERY</div>
             <div id={styles.carouselWrap}>
-                <Carousel>
+                <Carousel itemPadding={[0, 25, 0, 0]}>
                     <StaticImage src="../assets/imgs/stock-phys.jpg" height={500} width={375} loading="lazy"/>
                     <StaticImage src="../assets/imgs/stock-phys1.jpeg" height={500} width={375} loading="lazy"/>
                     <StaticImage src="../assets/imgs/stock-phys2.jpg" height={500} width={375} loading="lazy"/>

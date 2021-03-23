@@ -14,11 +14,11 @@ export default function Contact() {
                 <span>P: (02) 9230 3192<br/></span>
                 <span>E: movement@gmail.com</span>
                 <div id={styles.socials}>
-                    <Facebook />
-                    <Instagram />
+                    <Facebook className={styles.socialSvg} />
+                    <Instagram className={styles.socialSvg} />
+                    <Arrow id={styles.arrow}/>
+                    <span id={styles.follow}>Follow Us!</span>
                 </div>
-                <Arrow id={styles.arrow}/>
-                <span id={styles.follow}>Follow Us!</span>
             </div>
         </div>
       );

@@ -1,0 +1,13 @@
+#wrap {
+    width: 100vw;
+    margin: 50px 0;
+}
+
+#title {
+    text-align: center;
+    width: 100vw;
+    font-family: 'Prompt Bold';
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}

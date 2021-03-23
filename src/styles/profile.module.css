@@ -1,0 +1,43 @@
+#wrap {
+    height: 500px;
+    width: min(330px, calc(100vw - 125px));
+    background-color: #f9f9f9;
+    border: 1px solid;
+    border-radius: 0 15px 0 15px;
+    margin: 50px auto;
+}
+
+.prof-img {
+    height: 250px;
+    width: min(330px, calc(100vw - 125px));
+    border-radius: 0 15px 0 0;
+    margin: 0;
+    padding: 0;
+}
+
+.text-wrap {
+    width: 275px;
+    height: 200px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.name {
+    font-family: 'Prompt Bold';
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-family: 'Prompt Regular';
+    color: #006660
+}
+
+.description {
+    margin-top: 30px;
+    font-family: 'OpenSans Regular';
+    line-height: 20px;
+    font-size: 13px;
+
+}

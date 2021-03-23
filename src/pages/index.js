@@ -4,6 +4,7 @@ import "../styles/index.css";
 import Nav from "../components/Nav";
 import Landing from "../components/Landing";
 import Location from "../components/Location";
+import Team from "../components/Team";
 
 export default function Home({ data }) {
   const { allMarkdownRemark } = data;
@@ -16,6 +17,7 @@ export default function Home({ data }) {
       <Nav />
       <Landing mainTitle={mdFiles[0].node.frontmatter.title}/>
       <Location />
+      <Team />
     </div>
   );
 }

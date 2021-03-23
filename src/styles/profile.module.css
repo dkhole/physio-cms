@@ -10,7 +10,7 @@
 .prof-img {
     height: 180px;
     width: min(calc(100vw - 110px), 310px);
-    border-radius: 0 12px 0 0;
+    border-radius: 0 13px 0 0;
     margin: 0;
     padding: 0;
 }

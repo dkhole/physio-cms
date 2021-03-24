@@ -30,8 +30,8 @@ export default function Home({ data }) {
     <div id="wrapper">
       <Nav />
       <Landing landingImg={images.get('landing')} mainTitle={mdFiles[0].node.frontmatter.title} suburb={mdFiles[1].node.frontmatter.title}/>
-      <Location />
-      <Team prof1={images.get('paul')} prof2={images.get('mintae')} />
+      <Location address={mdFiles[2].node.frontmatter.title} description={mdFiles[3].node.frontmatter.title}/>
+      <Team prof1={images.get('paul')} prof2={images.get('mintae')} intro1={mdFiles[4].node.frontmatter.title} intro2={mdFiles[5].node.frontmatter.title}/>
       <Gallery gallery1={images.get('gallery1')} gallery2={images.get('gallery2')} gallery3={images.get('gallery3')}/>
       <Contact />
       <Footer />

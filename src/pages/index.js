@@ -12,11 +12,11 @@ import Footer from "../components/Footer";
 export default function Home({ data }) {
   const { allMarkdownRemark, allImageSharp } = data;
   const [images, setImages] = useState(new Map());
-  const mdFiles = allMarkdownRemark.edges;
+  const [mdFiles, setMdFiles] = useState(new Map());
 
   useEffect(() => {
     const extractImg = new Map();
-    //add each image edge into a map with key = orig_id and v = image_data
+
     for(const queryImg of allImageSharp.edges) {
       const dot = queryImg.node.fluid.originalName.indexOf('.');
       const boundary = queryImg.node.fluid.originalName.length - dot;
@@ -24,14 +24,21 @@ export default function Home({ data }) {
       extractImg.set(key, queryImg.node.gatsbyImageData);
     }
     setImages(extractImg);
+
+    const extractMdFiles = new Map();
+
+    for(const queryMdFile of allMarkdownRemark.edges) {
+      extractMdFiles.set(queryMdFile.node.frontmatter.select, queryMdFile.node.frontmatter.title);
+    }
+    setMdFiles(extractMdFiles);
   }, [])  // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div id="wrapper">
       <Nav />
-      <Landing landingImg={images.get('landing')} mainTitle={mdFiles[0].node.frontmatter.title} suburb={mdFiles[1].node.frontmatter.title}/>
-      <Location address={mdFiles[2].node.frontmatter.title} description={mdFiles[3].node.frontmatter.title}/>
-      <Team prof1={images.get('paul')} prof2={images.get('mintae')} intro1={mdFiles[4].node.frontmatter.title} intro2={mdFiles[5].node.frontmatter.title}/>
+      <Landing landingImg={images.get('landing')} mainTitle={mdFiles.get('title')} suburb={mdFiles.get('suburb')}/>
+      <Location address={mdFiles.get('address')} description={mdFiles.get('description')}/>
+      <Team prof1={images.get('paul')} prof2={images.get('mintae')} intro1={mdFiles.get('prof1_description')} intro2={mdFiles.get('prof2_description')}/>
       <Gallery gallery1={images.get('gallery1')} gallery2={images.get('gallery2')} gallery3={images.get('gallery3')}/>
       <Contact />
       <Footer />
@@ -47,6 +54,7 @@ export const pageQuery = graphql`
           frontmatter {
             date
             title
+            select
           }
         }
       }

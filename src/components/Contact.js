@@ -3,6 +3,7 @@ import * as styles from "../styles/contact.module.css";
 import Facebook from "../assets/svg/facebook.svg";
 import Instagram from "../assets/svg/instagram.svg";
 import Arrow from "../assets/svg/right.svg";
+import Tada from 'react-reveal/Tada';
 
 export default function Contact() {
     return (
@@ -19,7 +20,7 @@ export default function Contact() {
                     <Facebook className={styles.socialSvg} />
                     <Instagram className={styles.socialSvg} />
                     <Arrow id={styles.arrow}/>
-                    <span id={styles.follow}>Follow Us!</span>
+                    <Tada forever={true} duration={2000}><span id={styles.follow}>Follow Us!</span></Tada>
                 </div>
             </div>
         </div>

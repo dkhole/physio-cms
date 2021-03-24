@@ -14,6 +14,7 @@ collections:
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: select, label: Select, widget: select, options: ['title', 'suburb'] }
   - name: Location
     label: Location
     folder: md/location
@@ -21,6 +22,7 @@ collections:
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, widget: string, label: Title }
+      - { name: select, label: Select, widget: select, options: ['address', 'description'] }
   - name: Team
     label: Team
     folder: md/team
@@ -28,3 +30,4 @@ collections:
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, widget: string, label: Title }
+      - { name: select, label: Select, widget: select, options: ['prof1_description', 'prof2_description'] }

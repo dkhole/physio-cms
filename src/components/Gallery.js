@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Gallery() {
 
     return (
-        <div id={styles.wrap}>
+        <div>
             <div id={styles.title}>GALLERY</div>
             <div id={styles.carouselWrap}>
                 <Carousel itemPadding={[0, 25, 0, 0]}>

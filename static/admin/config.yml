@@ -14,3 +14,17 @@ collections:
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+  - name: Location
+    label: Location
+    folder: md/location
+    create: true
+    fields:
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, widget: string, label: Title }
+  - name: Team
+    label: Team
+    folder: md/team
+    create: true
+    fields:
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, widget: string, label: Title }

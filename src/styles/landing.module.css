@@ -18,6 +18,10 @@
     border-radius: 0 45px 0 45px;
 }
 
+.pic-wrap img {
+    border-radius: 0 45px 0 45px;
+}
+
 #main-wrap {
     position: relative;
     height: 500px;
@@ -45,26 +49,23 @@
 
 #main-title {
     position: absolute;
-    top: 240px;
-    left: 20px;
-    right: 0;
-    bottom: 0;
+    bottom: 90px;
     margin: auto;
-    height: 65px;
-    width: min(375px, 100vw - 15%);
+    height: auto;
+    width: min(305px, 100vw - 15% - 70px);
     line-height: 112%;
     font-size: min(1.6rem, 30px);
     font-weight: 600;
     font-family: 'Prompt Bold';
     text-transform: uppercase;
+    padding: 0 35px;
 
 }
 
 #location {
     position: absolute;
-    bottom: 75px;
-    left: 20px;
-
+    bottom: 60px;
+    left: 30px;
     margin: auto;
     height: 25px;
     width: 175px;

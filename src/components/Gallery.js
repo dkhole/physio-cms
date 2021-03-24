@@ -1,18 +1,17 @@
 import React from "react";
 import * as styles from "../styles/gallery.module.css";
 import Carousel from 'react-elastic-carousel';
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-export default function Gallery() {
-
+export default function Gallery({ gallery1, gallery2, gallery3 }) {
     return (
         <div>
             <div id={styles.title}>GALLERY</div>
             <div id={styles.carouselWrap}>
-                <Carousel itemPadding={[0, 25, 0, 0]}>
-                    <StaticImage src="../assets/imgs/stock-phys.jpg" height={500} width={375} loading="lazy"/>
-                    <StaticImage src="../assets/imgs/stock-phys1.jpeg" height={500} width={375} loading="lazy"/>
-                    <StaticImage src="../assets/imgs/stock-phys2.jpg" height={500} width={375} loading="lazy"/>
+                <Carousel itemPadding={[0, 25, 0, 25]}>
+                    <GatsbyImage image={gallery1} height={500} width={375} loading="lazy"/>
+                    <GatsbyImage image={gallery2} height={500} width={375} loading="lazy"/>
+                    <GatsbyImage image={gallery3} height={500} width={375} loading="lazy"/>
                 </Carousel>
             </div>
         </div>

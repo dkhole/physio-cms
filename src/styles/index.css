@@ -68,4 +68,7 @@ html, body {
     box-shadow: none;
 }
 
+.rec-item-wrapper {
+    height: 325px;
+}
 

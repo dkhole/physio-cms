@@ -7,10 +7,11 @@
 }
 
 #carousel-wrap {
-    width: calc(100vw - 50px);
+    width: max(325px, calc(100vw - 20px));
     margin: auto;
 }
 
 #carousel-wrap img {
     border-radius: 0 15px 0 15px;
+    object-fit: cover;
 }

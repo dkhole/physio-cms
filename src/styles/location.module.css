@@ -43,6 +43,12 @@
     left: 25px;
 }
 
+#map img {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
+
 #here {
     position: absolute;
     left: 250px;
@@ -63,7 +69,7 @@
 #content {
     text-align: center;
     font-family: 'OpenSans Regular';
-    width: 300px;
+    width: max(300px, calc(100vw - 100px));
     margin: auto;
     line-height: 181%;
     letter-spacing: 0.75px;

@@ -8,7 +8,7 @@ export default function Gallery({ gallery1, gallery2, gallery3 }) {
     return (
         <div>
             <div id={styles.title}>GALLERY</div>
-            <Fade top>
+            <Fade bottom>
                 <div id={styles.carouselWrap}>
                     <Carousel itemPadding={[0, 25, 0, 25]}>
                         <GatsbyImage image={gallery1} height={500} width={375} loading="lazy"/>

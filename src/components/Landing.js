@@ -5,7 +5,6 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Jello from 'react-reveal/Jello';
 
 export default function Landing({ mainTitle, suburb, landingImg }) {
-    console.log(landingImg);
     return (
         <div id={styles.wrap}>
             <Jello duration={950}>

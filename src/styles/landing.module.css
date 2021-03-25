@@ -16,6 +16,7 @@
     width: min(375px, 100vw - 15%);
     margin: 5px auto;
     border-radius: 0 45px 0 45px;
+    overflow: hidden;
 }
 
 .pic-wrap img {

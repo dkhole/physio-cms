@@ -4,7 +4,7 @@ import "../styles/index.css";
 
 export default function Nav() {
     const [ham, setHam] = useState('hamburger');
-    const [navMenu, setNavMenu] = useState('');
+    const [navMenu, setNavMenu] = useState('closed');
 
     const setClass = () => {
         if(ham === 'hamburger') {

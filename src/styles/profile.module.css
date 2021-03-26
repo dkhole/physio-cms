@@ -5,6 +5,7 @@
     border: 2px solid;
     border-radius: 0 15px 0 15px;
     margin: 50px auto;
+    overflow: hidden;
 }
 
 .prof-img {
@@ -16,7 +17,6 @@
 }
 
 .prof-img img {
-    overflow: hidden;
     border-radius: 0 13px 0 0;
 }
 
@@ -45,4 +45,36 @@
     line-height: 20px;
     font-size: clamp(11.5px, 1.25vw, 13px);
     padding: 25px 27.5px 35px 35px;
+}
+
+@media(min-width: 1000px) {
+    #wrap {
+        height: 600px;
+        width: 500px;
+    }
+
+    .prof-img {
+        height: 250px;
+        width: 500px;  
+    }
+
+    .text-wrap {
+        width: 450px;
+        height: auto;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .name {
+        font-size: 35px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 30px;
+    }
 }

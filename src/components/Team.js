@@ -5,9 +5,9 @@ import Fade from 'react-reveal/Fade';
 
 export default function Team({ prof1, prof2, intro1, intro2 }) {
     return (
-        <div id={styles.wrap}>
+        <div id="team">
             <div id={styles.title}><span>OUR TEAM</span></div>
-            <div>
+            <div id={styles.profileWrap}>
                 <Fade right>
                     <Profile image={prof1} name="Paul Yu" title="Physiotherapist" description={intro1} position="30% 25%"/>
                 </Fade>

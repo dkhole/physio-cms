@@ -19,7 +19,7 @@ export default function Nav() {
     return (
         <div id={styles.nav}>
             <span id={styles.logo}>Movement Mechanics</span>
-            <div className={ham} onClick={setClass}>
+            <div tabIndex={0} role="button" className={ham} onKeyDown={setClass} onClick={setClass}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,10 +30,10 @@ export default function Nav() {
             <div className={[styles.menu, styles[`${navMenu}`]].join(' ')}>
                 <div id={styles.triangle}></div>
                 <ul>
-                    <li>Book Now</li>
-                    <li>Location</li>
-                    <li>Team</li>
-                    <li>Contact</li>
+                    <li><a href="#landing">Book Now</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>

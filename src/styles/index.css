@@ -37,6 +37,9 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 #wrapper {
@@ -175,3 +178,59 @@ html, body {
   top: 13px;
 }
 
+#landing {
+  width: 100vw;
+  color: white;
+  padding: 85px 0 50px 0;
+}
+
+#location {
+  height: auto;
+  width: 100vw;
+  margin-top: 20px;
+}
+
+#team {
+  width: 100vw;
+  margin: 50px 0;
+}
+
+#contact {
+  margin-bottom: 50px;
+}
+
+@media(min-width: 900px) {
+  #nav {
+      font-size: 30px;
+  }
+
+  .hamburger {
+    margin-right: 50px;
+    width: 40px;
+  }
+
+  .hamburger span {
+    height: 5.5px;
+    width: 50%;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    left: 10px;
+    top: 7px;
+  }
+  
+  .hamburger.open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 7px;
+  }
+  
+  .hamburger.open span:nth-child(5) {
+    left: 10px;
+    top: 13px;
+  }
+
+  #location {
+    height: 800px;
+    padding-top: 200px;
+  }
+}

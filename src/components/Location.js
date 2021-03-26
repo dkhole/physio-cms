@@ -7,19 +7,22 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function Location({ address, description, map }) {
     return (
-        <div id={styles.wrap}>
+        <div id="location">
             <div id={styles.title}><span>LOCATION</span></div>
             <div id={styles.address}><span>{address}</span></div>
-            <Fade left>
-                <div id={styles.mapWrap}>
+            <div id={styles.mapWrap}>
+                <Fade left>
                     <div id={styles.mapContainer}>
                         <div id={styles.map}><GatsbyImage layout="fixed" image={map} height={350} width={350} loading="lazy"/></div>
-                        <Tada forever={true} duration={2000}><div id={styles.here}>We are here</div></Tada>
-                        <Arrow id={styles.arrow}/>
+                        <div id={styles.arrowWrap}>
+                            <Tada forever={true} duration={2000}><div id={styles.here}>We are here</div></Tada>
+                            <Arrow id={styles.arrow}/>
+                        </div>
                     </div>
-                </div>
-            </Fade>
-            <div id={styles.content}><span>{description}</span></div>
+                </Fade>
+                <div id={styles.content}><span>{description}</span></div>
+            </div>
+            
         </div>
       );
 }

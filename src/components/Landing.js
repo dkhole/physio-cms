@@ -6,13 +6,15 @@ import Jello from 'react-reveal/Jello';
 
 export default function Landing({ mainTitle, suburb, landingImg }) {
     return (
-        <div id={styles.wrap}>
+        <div id="landing">
             <Jello duration={950}>
                 <div id={styles.mainWrap}>
                     <div id={styles.photo}><GatsbyImage className={styles.picWrap} image={landingImg} height={500} width={375} loading="lazy"/></div>
-                    <button>BOOK NOW</button>
-                    <div id={styles.mainTitle}><span>{mainTitle}</span></div>
-                    <div id={styles.location}><Placeholder className={styles.placeholder}/><span>{suburb}</span></div>
+                    <div id={styles.content}>
+                        <button>BOOK NOW</button>
+                        <div id={styles.mainTitle}><span>{mainTitle}</span></div>
+                        <div id={styles.location}><Placeholder className={styles.placeholder}/><span>{suburb}</span></div>
+                    </div>
                 </div>
             </Jello>
         </div>

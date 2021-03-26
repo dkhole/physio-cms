@@ -7,7 +7,7 @@ import Tada from 'react-reveal/Tada';
 
 export default function Contact() {
     return (
-        <div id={styles.wrap}>
+        <div id="contact">
             <div id={styles.title}>CONTACT US</div>
             <div id={styles.contact}>
                 <span>

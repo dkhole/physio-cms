@@ -42,4 +42,4 @@ collections:
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, widget: string, label: Title }
-      - { name: select, label: Select, widget: select, options: ['contact_address', 'contact_phone', 'contact_email'], required: true }
+      - { name: select, label: Select, widget: select, options: ['contact_street', 'contact_suburb', 'contact_state', 'contact_postcode', 'contact_phone', 'contact_email'], required: true }

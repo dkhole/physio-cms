@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "../assets/svg/logo.svg";
 import * as styles from "../styles/nav.module.css";
 import "../styles/index.css";
 
@@ -18,7 +19,10 @@ export default function Nav() {
 
     return (
         <div id={styles.nav}>
-            <span id={styles.logo}>Movement Mechanics</span>
+            <div id={styles.logoWrap}>
+                <Logo />
+                <span id={styles.logo}>Movement Mechanics</span>
+            </div>
             <div tabIndex={0} role="button" className={ham} onKeyDown={setClass} onClick={setClass}>
                 <span></span>
                 <span></span>

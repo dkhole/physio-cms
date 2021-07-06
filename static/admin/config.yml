@@ -11,6 +11,7 @@ collections:
     label: Landing
     folder: md/landing
     create: true
+    slug: "{{select}}"
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
@@ -19,6 +20,7 @@ collections:
     label: Location
     folder: md/location
     create: true
+    slug: "{{select}}"
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, widget: string, label: Title }
@@ -27,7 +29,17 @@ collections:
     label: Team
     folder: md/team
     create: true
+    slug: "{{select}}"
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, widget: string, label: Title }
       - { name: select, label: Select, widget: select, options: ['prof1_description', 'prof2_description'], required: true }
+  - name: Contact
+    label: Contact
+    folder: md/contact
+    create: true
+    slug: "{{select}}"
+    fields:
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, widget: string, label: Title }
+      - { name: select, label: Select, widget: select, options: ['contact_address', 'contact_phone', 'contact_email'], required: true }

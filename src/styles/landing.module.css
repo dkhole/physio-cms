@@ -40,6 +40,13 @@
     border-radius: 0 15px 0 15px;
     font-size: 18px;
     cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.5,-1, 0.5, 2)
+}
+
+#main-wrap button:hover {
+    height: 62.5px;
+    width: 182.5px;
+    background-color: #b973d4;
 }
 
 #main-title {
@@ -89,10 +96,8 @@
     #content {
         height: 500px;
         width: 700px;
-
         margin: auto;
         position: relative;
-        
     }
 
     #main-title {
@@ -119,6 +124,7 @@
         top: 380px;
         left: 40px;
         margin: 0;
+        z-index: 1;
     }
     
 
@@ -126,7 +132,7 @@
         margin: auto;
         height: 600px;
         width: min(450px, 100vw - 15%);
-        margin-right: ;
+
     }
 
     .pic-wrap {

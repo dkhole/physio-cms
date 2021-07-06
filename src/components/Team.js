@@ -8,10 +8,10 @@ export default function Team({ prof1, prof2, intro1, intro2 }) {
         <div id="team">
             <div id={styles.title}><span>OUR TEAM</span></div>
             <div id={styles.profileWrap}>
-                <Fade right>
+                <Fade bottom>
                     <Profile image={prof1} name="Paul Yu" title="Physiotherapist" description={intro1} position="30% 25%"/>
                 </Fade>
-                <Fade left>
+                <Fade bottom>
                     <Profile image={prof2} name="Mintae Kim" title="Chiropractor" description={intro2} position="30% 30%"/>
                 </Fade>
             </div>

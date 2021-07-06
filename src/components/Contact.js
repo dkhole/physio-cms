@@ -4,10 +4,12 @@ import Facebook from "../assets/svg/facebook.svg";
 import Instagram from "../assets/svg/instagram.svg";
 import Arrow from "../assets/svg/right.svg";
 import Tada from 'react-reveal/Tada';
+import Fade from 'react-reveal/Fade';
 
 export default function Contact() {
     return (
         <div id="contact">
+            <Fade bottom>   
             <div id={styles.title}>CONTACT US</div>
             <div id={styles.contact}>
                 <span>
@@ -23,6 +25,7 @@ export default function Contact() {
                     <Tada forever={true} duration={2000}><span id={styles.follow}>Follow Us!</span></Tada>
                 </div>
             </div>
+            </Fade>
         </div>
       );
 }

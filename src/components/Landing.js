@@ -11,7 +11,7 @@ export default function Landing({ mainTitle, suburb, landingImg }) {
                 <div id={styles.mainWrap}>
                     <div id={styles.photo}><GatsbyImage className={styles.picWrap} image={landingImg} height={500} width={375} loading="lazy"/></div>
                     <div id={styles.content}>
-                        <button>BOOK NOW</button>
+                        <button><span>BOOK NOW</span></button>
                         <div id={styles.mainTitle}><span>{mainTitle}</span></div>
                         <div id={styles.location}><Placeholder className={styles.placeholder}/><span>{suburb}</span></div>
                     </div>

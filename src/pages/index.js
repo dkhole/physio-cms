@@ -48,7 +48,7 @@ export default function Home({ data }) {
       <Location address={mdFiles.get('address')} description={mdFiles.get('description')} map={images.get('map')}/>
       <Team prof1={images.get('paul')} prof2={images.get('mintae')} intro1={mdFiles.get('prof1_description')} intro2={mdFiles.get('prof2_description')}/>
       <Gallery isMobile={isMobile} gallery1={images.get('gallery1')} gallery2={images.get('gallery2')} gallery3={images.get('gallery3')}/>
-      <Contact />
+      <Contact street={mdFiles.get('contact_street')} suburb={mdFiles.get('contact_suburb')} state={mdFiles.get('contact_state')} postcode={mdFiles.get('contact_postcode')} email={mdFiles.get('contact_email')} phone={mdFiles.get('contact_phone')}/>
       <Footer />
     </div>
   );

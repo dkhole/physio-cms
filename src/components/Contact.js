@@ -6,17 +6,17 @@ import Arrow from "../assets/svg/right.svg";
 import Tada from 'react-reveal/Tada';
 import Fade from 'react-reveal/Fade';
 
-export default function Contact() {
+export default function Contact({ street, suburb, state, postcode, email, phone }) {
     return (
         <div id="contact">
             <Fade bottom>   
             <div id={styles.title}>CONTACT US</div>
             <div id={styles.contact}>
                 <span>
-                    42 Wallaby Way<br/>
-                    Sydney, NSW<br/>
-                    P: (02) 9230 3192<br/>
-                    E: movement@gmail.com
+                    {street}<br/>
+                    {suburb}, {state}, {postcode}<br/>
+                    P: {phone}<br/>
+                    E: {email}
                 </span>
                 <div id={styles.socials}>
                     <Facebook className={styles.socialSvg} />

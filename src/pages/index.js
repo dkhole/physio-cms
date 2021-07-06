@@ -46,7 +46,7 @@ export default function Home({ data }) {
       <Nav />
       <Landing landingImg={images.get('landing')} mainTitle={mdFiles.get('title')} suburb={mdFiles.get('suburb')}/>
       <Location address={mdFiles.get('address')} description={mdFiles.get('description')} map={images.get('map')}/>
-      <Team prof1={images.get('paul')} prof2={images.get('mintae')} intro1={mdFiles.get('prof1_description')} intro2={mdFiles.get('prof2_description')}/>
+      <Team prof1={images.get('paul')} prof2={images.get('mintae')} name1={mdFiles.get('prof1_name')} title1={mdFiles.get('prof1_title')} description1={mdFiles.get('prof1_description')} name2={mdFiles.get('prof2_name')} title2={mdFiles.get('prof2_title')} description2={mdFiles.get('prof2_description')}/>
       <Gallery isMobile={isMobile} gallery1={images.get('gallery1')} gallery2={images.get('gallery2')} gallery3={images.get('gallery3')}/>
       <Contact street={mdFiles.get('contact_street')} suburb={mdFiles.get('contact_suburb')} state={mdFiles.get('contact_state')} postcode={mdFiles.get('contact_postcode')} email={mdFiles.get('contact_email')} phone={mdFiles.get('contact_phone')}/>
       <Footer />

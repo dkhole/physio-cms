@@ -11,12 +11,22 @@
 
 #content-wrap {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 30px;
+}
+
+#content-wrap div {
+    margin: 0 25px;
 }
 
 #sig {
     text-align: center;
     padding: 10px;
+}
+
+@media(min-width: 1000px) {
+    #content-wrap div {
+        margin: 0 150px;
+    }
 }
 

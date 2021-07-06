@@ -33,7 +33,7 @@ collections:
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, widget: string, label: Title }
-      - { name: select, label: Select, widget: select, options: ['prof1_name', 'prof1_title', prof1_description', 'prof2_name', 'prof2_title', 'prof2_description'], required: true }
+      - { name: select, label: Select, widget: select, options: ['prof1_name', 'prof1_title', 'prof1_description', 'prof2_name', 'prof2_title', 'prof2_description'], required: true }
   - name: Contact
     label: Contact
     folder: md/contact

@@ -30,9 +30,10 @@ export default function Nav() {
             <div className={[styles.menu, styles[`${navMenu}`]].join(' ')}>
                 <div id={styles.triangle}></div>
                 <ul>
-                    <li><a href="#landing">Book Now</a></li>
+                    <li id={styles.bookLink}><a href="https://movement-mechanics.au2.cliniko.com/bookings#service" aria-label="Link to booking">Book Now</a></li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#team">Team</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>

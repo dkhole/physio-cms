@@ -19,7 +19,7 @@
 }
 
 .menu {
-    height: 215px;
+    height: 250px;
     width: 200px;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -46,9 +46,18 @@
     color: #f9f9f9;
 }
 
-.menu li a:hover {
-    color: #006660;
+#bookLink a {
+    color: #00c0b5;
 }
+
+.menu li a:hover {
+    color: #b973d4;
+}
+
+#bookLink a:hover {
+    color: #b973d4;
+}
+
 
 .menu.closed {
     visibility: hidden;
@@ -97,7 +106,7 @@
     }
     
     .menu {
-        height: 315px;
+        height: 360px;
         width: 300px;
         top: 50px;
         right: 50px;

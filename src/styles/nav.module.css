@@ -1,4 +1,4 @@
-#nav {
+.nav {
     position: fixed;
     height: 50px;
     width: 100vw;
@@ -12,6 +12,12 @@
     color: black;
     background-color: #f9f9f9;
     z-index: 2;
+    transition: 0.4s ease-in-out;
+}
+
+.scroll {
+    box-shadow: 0px 1px 10px #999;
+    
 }
 
 #logo-wrap {
@@ -23,6 +29,7 @@
 #logo-wrap svg {
     width: 32.5px;
     margin: 0 5px;
+    background-color: #fff;
 }
 
 #mechanics {
@@ -59,15 +66,15 @@
 }
 
 #bookLink a {
-    color: var(--prim-light);
+    color: var(--second-color);
 }
 
 .menu li a:hover {
-    color: var(--second-color);
+    color: var(--prim-light);
 }
 
 #bookLink a:hover {
-    color: var(--second-color);
+    color: var(--prim-light);
 }
 
 
@@ -113,12 +120,12 @@
 }
 
 @media(min-width: 1000px) {
-    #nav {
+    .nav {
         font-size: 30px;
     }
     
     .menu {
-        height: 360px;
+        height: 425px;
         width: 300px;
         top: 50px;
         right: 50px;

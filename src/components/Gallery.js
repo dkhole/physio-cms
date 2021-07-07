@@ -13,9 +13,9 @@ export default function Gallery({ gallery1, gallery2, gallery3, isMobile }) {
                 <div id={styles.title}>GALLERY</div>
                     <div id={styles.carouselWrap}>
                         <Carousel itemPadding={[0, 25, 0, 25]}>
-                            <GatsbyImage image={gallery1} height={500} width={375} loading="lazy"/>
-                            <GatsbyImage image={gallery2} height={500} width={375} loading="lazy"/>
-                            <GatsbyImage image={gallery3} height={500} width={375} loading="lazy"/>
+                            <GatsbyImage image={gallery1} height={500} width={375} loading="lazy" alt="gallery1"/>
+                            <GatsbyImage image={gallery2} height={500} width={375} loading="lazy" alt="gallery2"/>
+                            <GatsbyImage image={gallery3} height={500} width={375} loading="lazy" alt="gallery3"/>
                         </Carousel>
                     </div>
                 </Fade>

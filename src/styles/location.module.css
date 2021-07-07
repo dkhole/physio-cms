@@ -32,7 +32,7 @@
     height: 250px;
     width: 250px;
     border-radius: 100%;
-    border: 2px solid #00c0B5;
+    border: 2px solid var(--prim-color);
     position: absolute;
     left: 25px;
 }

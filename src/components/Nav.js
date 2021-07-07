@@ -21,7 +21,7 @@ export default function Nav() {
         <div id={styles.nav}>
             <div id={styles.logoWrap}>
                 <Logo />
-                <span id={styles.logo}>Movement Mechanics</span>
+                <span id={styles.logo}>Movement<span id={styles.mechanics}>Mechanics</span></span>
             </div>
             <div tabIndex={0} role="button" className={ham} onKeyDown={setClass} onClick={setClass}>
                 <span></span>
@@ -34,11 +34,12 @@ export default function Nav() {
             <div className={[styles.menu, styles[`${navMenu}`]].join(' ')}>
                 <div id={styles.triangle}></div>
                 <ul>
-                    <li id={styles.bookLink}><a href="https://movement-mechanics.au2.cliniko.com/bookings#service" aria-label="Link to booking">Book Now</a></li>
+                    <li><a href="#__gatsby">Home</a></li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li id={styles.bookLink}><a href="https://movement-mechanics.au2.cliniko.com/bookings#service" aria-label="Link to booking">Book Now</a></li>
                 </ul>
             </div>
         </div>

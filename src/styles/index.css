@@ -33,6 +33,12 @@
     src: url(../assets/fonts/Caveat-VariableFont_wght.ttf);
 }
 
+:root {
+  --prim-color: #584ca4;
+  --prim-light: #7d72c7;
+  --second-color: #00c0b5;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -100,7 +106,7 @@ html, body {
   position: absolute;
   height: 3.5px;
   width: 50%;
-  background: #00c0b5;
+  background: var(--prim-color);
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -203,7 +209,7 @@ html, body {
   outline:0;
 }
 
-@media(min-width: 900px) {
+@media(min-width: 1000px) {
   #landing {
     height: 100vh;
     width: 100vw;

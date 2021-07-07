@@ -33,7 +33,7 @@
     margin: auto;
     height: 55px;
     width: 175px;
-    background-color: #00c0b5;
+    background-color: var(--prim-color);
     color: white;
     font-family: 'OpenSans Bold';
     border: none;
@@ -46,7 +46,7 @@
 #main-wrap button:hover {
     height: 62.5px;
     width: 182.5px;
-    background-color: #b973d4;
+    background-color: var(--second-color);
 }
 
 #main-title {

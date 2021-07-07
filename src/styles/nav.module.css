@@ -21,13 +21,17 @@
 }
 
 #logo-wrap svg {
-    height: 25px;
-    width: 50px;
+    width: 32.5px;
     margin: 0 5px;
 }
 
+#mechanics {
+    font-family: 'Prompt Regular';
+    font-weight: 300;
+}
+
 .menu {
-    height: 250px;
+    height: 285px;
     width: 200px;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -55,15 +59,15 @@
 }
 
 #bookLink a {
-    color: #00c0b5;
+    color: var(--prim-light);
 }
 
 .menu li a:hover {
-    color: #b973d4;
+    color: var(--second-color);
 }
 
 #bookLink a:hover {
-    color: #b973d4;
+    color: var(--second-color);
 }
 
 
@@ -108,7 +112,7 @@
     display:none;
 }
 
-@media(min-width: 900px) {
+@media(min-width: 1000px) {
     #nav {
         font-size: 30px;
     }
@@ -118,5 +122,11 @@
         width: 300px;
         top: 50px;
         right: 50px;
+    }
+    
+    #logo-wrap svg {
+        height: 22.5px;
+        width: 50px;
+        margin: 0 5px;
     }
 }

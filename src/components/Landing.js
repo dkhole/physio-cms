@@ -11,7 +11,7 @@ export default function Landing({ mainTitle, suburb, landingImg }) {
                 <div id={styles.mainWrap}>
                     <div id={styles.photo}><GatsbyImage className={styles.picWrap} alt="landing" image={landingImg} height={500} width={375} loading="lazy"/></div>
                     <div id={styles.content}>
-                    <a href="https://movement-mechanics.au2.cliniko.com/bookings#service" aria-label="Link to booking"><button><span>BOOK NOW</span></button></a>
+                    <a href="https://movement-mechanics.au2.cliniko.com/bookings#service" aria-label="Link to booking"><button id={styles.button}><span>BOOK NOW</span></button></a>
                         <div id={styles.mainTitle}><span>{mainTitle}</span></div>
                         <div id={styles.location}><Placeholder className={styles.placeholder}/><span>{suburb}</span></div>
                     </div>

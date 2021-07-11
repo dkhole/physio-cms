@@ -30,8 +30,6 @@ export default function Nav() {
         }
     }, [scrollPosition]);
 
-    console.log(navStyle);
-
     const setClass = () => {
         if(ham === 'hamburger') {
             setHam('hamburger open');

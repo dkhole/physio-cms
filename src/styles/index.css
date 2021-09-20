@@ -78,7 +78,7 @@ html, body {
 }
 
 .rec-item-wrapper {
-    height: 325px;
+    height: 625px;
 }
 
 /* hamburger */
@@ -248,5 +248,9 @@ html, body {
   .hamburger.open span:nth-child(5) {
     left: 10px;
     top: 13px;
+  }
+
+  .rec .rec-carousel {
+    height: 125px;
   }
 }

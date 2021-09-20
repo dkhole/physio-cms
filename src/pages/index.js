@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import "../styles/index.css";
 import Nav from "../components/Nav";
@@ -8,6 +9,7 @@ import Team from "../components/Team";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import logo from "../assets/svg/logo.svg";
 
 export default function Home({ data }) {
   const { allMarkdownRemark, allImageSharp } = data;
@@ -43,6 +45,9 @@ export default function Home({ data }) {
 
   return (
     <div id="wrapper">
+      <Helmet>
+        <title>Movement Mechanics</title>
+      </Helmet>
       <Nav />
       <Landing landingImg={images.get('landing')} mainTitle={mdFiles.get('title')} suburb={mdFiles.get('suburb')}/>
       <Location address={mdFiles.get('address')} description={mdFiles.get('description')} map={images.get('map')}/>

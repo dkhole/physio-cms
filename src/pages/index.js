@@ -9,7 +9,6 @@ import Team from "../components/Team";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import logo from "../assets/svg/logo.svg";
 
 export default function Home({ data }) {
   const { allMarkdownRemark, allImageSharp } = data;
@@ -76,7 +75,7 @@ export const pageQuery = graphql`
       edges {
         node {
           gatsbyImageData
-          fluid {
+          fluid(webpQuality: 90) {
             originalName
           }
         }

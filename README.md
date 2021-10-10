@@ -1,1 +1,14 @@
-Physiotherapy website made with Gatsby.js and Netlify CMS
+## Landing Page
+A landing page for a local physio/chiro clinic.
+
+## Screenshots
+Include logo/demo screenshot etc.
+
+## Tech/framework used
+- Gatsby.js
+
+## Installation
+- npm install
+- gatsby develop
+
+© dkhole
